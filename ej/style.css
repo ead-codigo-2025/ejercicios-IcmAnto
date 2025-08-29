@@ -1,0 +1,53 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+  
+#grid1 {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-content:center;
+  grid-template-areas:
+    ". home1 home1 home1 queHago"
+    "contacto home1 home1 home1 ."
+    ". name1 name1 name1 ."
+    ". bio bio bio .";
+}
+
+.miniBloque{
+  
+}
+
+#contacto{
+  grid-area:contacto;
+
+}
+
+#home1 {
+  grid-area:home1;
+  width: 70%;
+  height: 65%;
+}
+
+    #imgPrincipal {
+     width: 40%;
+     height: auto;
+    }
+
+#name1{
+  grid-area:name1;
+}
+
+#bio{
+  grid-area:bio;
+}
+
+#queHago{
+  grid-area:queHago;
+
+}
+  #asignaturas{
+  grid-area:asignaturas;
+
+  }
